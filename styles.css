@@ -1,0 +1,71 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.controls, h1{
+	text-align: center;
+}
+.keys{
+	display: flex;
+	justify-content: center;
+}
+.keys > p{
+	padding: 0px 50px;
+}
+.stage{
+	height: 500px;
+	width: 800px;
+	position: relative;
+	padding: 150px 300px;
+	margin: auto;
+	perspective: 1000px;
+	border: 1px solid black;
+}
+.box{
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	transform-style: preserve-3d;
+}
+.box figure{
+	height: 201px;
+	width: 201px;
+	position: absolute;
+	margin: 0px;
+	color: white;
+	text-align: center;
+	line-height: 200px;
+	font-size: 40px;
+	transition: background 1s, border 1s;
+	transition-timing-function: linear;
+}
+.box #front{
+	transform: rotateY(   0deg ) translateZ( 100px );
+}
+.box #back{
+	transform: rotateX( 180deg ) translateZ( 100px ) rotate( 180deg );
+}
+.box #left{
+	transform: rotateY( -90deg ) translateZ( 100px );
+}
+.box #right{
+	transform: rotateY(  90deg ) translateZ( 100px );
+}
+.box #top{
+	transform: rotateX(  90deg ) translateZ( 100px );
+}
+.box #bottom{
+	transform: rotateX( -90deg ) translateZ( 100px );
+}
+
+
+
+
+
+
+
+
+
+
